@@ -8,7 +8,7 @@ Universidad Miguel Hernandez Elche.
 
 Cualquier bug se puede indicar en diegojuarez_13@hotmail.com.
 # Practicas
- * Aplicación para saber el conocimiento sobre plataforma Android.
- * Gestos y almacenamiento.
- * Phonegap / Apache Cordova.
+ * Aplicación para saber el conocimiento sobre plataforma Android. :heavy_check_mark:
+ * Gestos y almacenamiento. :heavy_check_mark:
+ * Phonegap / Apache Cordova. :heavy_check_mark:
 
