@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Capture Photo</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    var pictureSource;   
+    var destinationType; 
+
+    document.addEventListener("deviceready",onDeviceReady,false);
+
+    function onDeviceReady() {
+        pictureSource=navigator.camera.PictureSourceType;
+        destinationType=navigator.camera.DestinationType;
+    }
+
+    function onPhotoDataSuccess(imageData) {
+	
+      var imagenpequeña = document.getElementById('imagen');
+
+      imagenpequeña.style.display = 'block';
+
+      imagenpequeña.src = "data:image/jpeg;base64," + imageData;
+    }
+
+    function onPhotoURISuccess(imageURI) {
+
+      var imagengrande = document.getElementById('imagen');
+      imagengrande.style.display = 'block';
+      imagengrande.src = imageURI;
+    }
+
+    //Creamos la funcion que se encargara de capturar una imagen con la camara
+    function capturarfoto() {
+      // Captura la foto
+      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
+        destinationType: destinationType.DATA_URL });
+    }
+
+//Si hay algun fallo
+    function onFail(mensaje) {
+      alert('Fallo debido a: ' + mensaje);
+    }
+		</script>
+		<header>
+			<div id="titulo">
+				<h1>PRUEBA CAMARA</h1>
+			</div>
+		</header>
+		<!--Menu donde pondremos varios botones con diferentes acciones -->
+		<nav>
+		</nav>				
+    <body>	 
+		
+		
+		
+		<img width="80%" height="60%" style="border:solid #e35205 5px;color:white;text-decoration:none;" id="imagen" alt="Pulse el boton Camara para capturar una foto aqui" src=""/>
+		<!-- Cuando pulsemos en el boton camara ejecutara la funcion obtenerfoto-->
+		<button onclick="capturarfoto();">Camara</button> <br>
+		
+	</body>
+		<footer>
+		<div id="titulofoot">
+		<h1>DESARROLLADO POR DIEGO JUAREZ ROMERO </h1>
+		</div>
+		</footer>
+</html>

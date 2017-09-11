@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Vibracion</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+document.addEventListener("deviceready",onDeviceReady,false);
+function onDeviceReady() {
+    console.log(navigator.vibrate);
+}
+function vibrar(){
+var tiempovibrar = document.getElementById("vibracion").value;
+var tiempovibrarfull = tiempovibrar * 1000;
+navigator.vibrate(tiempovibrarfull);
+  alert('Vibrando durante: '+tiempovibrar + ' segundos');
+}
+function beep(){
+var tiempobeep = document.getElementById("beep").value;
+navigator.notification.beep(tiempobeep);
+ alert('Numero de beeps: '+tiempobeep);
+}
+	</script>
+		<header>
+			<div id="titulo">
+				<h1>VIBRACIÓN Y BEEPS</h1>
+			</div>
+		</header>
+		<nav>
+		</nav>				
+    <body>	
+	<h2>VIBRACIÓN</h2>
+	<label for="VIBRACIÓN">Duración(segundos):</label><br><input type="range" id="vibracion"  min="0" max="6" />
+	<!-- Cuando pulsemos en el boton vibracion ejecutara la funcion vibrar-->
+	<button onclick="vibrar();">Vibrar</button> <br>
+	<h2>BEEPS</h2>
+	<label for="VIBRACIÓN">Duración(beeps):</label><br><input type="range" id="beep"  min="0" max="5" />
+	<!-- Cuando pulsemos en el boton vibracion ejecutara la funcion beep-->
+	<button onclick="beep();">Beep</button> <br>
+	</body>
+		<footer>
+		<div id="titulofoot">
+		<h1>DESARROLLADO POR DIEGO JUAREZ ROMERO </h1>
+		</div>
+		</footer>
+</html>
