@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">practica2</string>
+    <string name="usuario">Usuario: </string>
+    <string name="aplicacion">Aplicacion: </string>
+    <string name="fechaalta">Fecha alta: </string>
+    <string name="URLApp">Url App: </string>
+    <string name="imgURL">Imagen URL: </string>
+    <string name="tipoaplicacion">Tipo de aplicacion: </string>
+    <string name="aceptar">Aceptar</string>
+    <string name="faltausuario">Introduzca un usuario</string>
+    <string name="faltaalias">Introduzca un alias para su usuario</string>
+    <string name="faltaemail">Introduzca un email</string>
+    <string name="faltaimagenusuario">Introduzca una imagen</string>
+    <string name="faltagesto">Introduzca un gesto</string>
+    <string name="password">Password: </string>
+    <string name="faltapassword">Introduzca una contraseña</string>
+    <string name="añadirusu">Añadir usuario</string>
+    <string name="añadirlog">Añadir login</string>
+    <string name="titulomain">Login user</string>
+    <string name="tituloNuevoUsuario">Añadir usuario</string>
+    <string name="email">Email:</string>
+    <string name="fotogaleria">Desde galeria</string>
+    <string name="fotocamara">Desde camara</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="minimopassword">La contraseña debe tener al menos 8 caracteres</string>
+    <string name="errormeminterna">Error escribiendo fichero en memoria interna</string>
+    <string name="errorleyendofichero">Error leyendo fichero de memoria interna</string>
+    <string name="datosguardados">Los datos fueron grabados</string>
+    <string name="tituloactividadlistalogin">Listado de logins</string>
+    <string name="Aplicacionweb">Aplicacion web</string>
+    <string name="Aplicacionmovil">Aplicacion movil</string>
+    <string name="fecha">FECHA</string>
+    <string name="usuOkgestoOk">Usuario encontrado y gestor SI correcto</string>
+    <string name="usuOkgestoNo">Usuario encontrado y gesto NO correcto</string>
+    <string name="usuNOgestoNo">El usuario,la password o el gesto no son correctos</string>
+    <string name="documentousuario">usuarios.txt</string>
+    <string name="gestonoreconocido">No se ha reconocido</string>
+    <string name="nuevologin">Nuevo login añadido con exito</string>
+    <string name="faltaaplicacion">Introduzca una aplicacion</string>
+    <string name="faltafecha">Estableza fecha de alta</string>
+    <string name="Urlapp">Introduza url de app</string>
+    <string name="Noregistrados">No hay registrados</string>
+    <string name="Aceptarborrado">Aceptar</string>
+    <string name="Cancelarborrado">Cancelar</string>
+    <string name="MensajeAlerta">¿Esta seguro de borrar este login?</string>
+    <string name="BorrarLogin">BORRADO DE LOGIN</string>
+    <string name="ErrorBD">ERROR EN LA BD</string>
+    <string name="modificadologin">Login modificado correctamente</string>
+    <string name="loginborrado">Login borrado correctamente</string>
+    <string name="libreriacomprobada">Toda la libreria ha sido comprobada</string>
+    <!-- Creamos un String-array donde guardaremos todas las posibles respusetas
+    para los Spinners-->
+    <string-array name="TiposDeAplicaciones">
+        <item>@string/Aplicacionweb</item>
+        <item>@string/Aplicacionmovil</item>
+    </string-array>
+
+</resources>
