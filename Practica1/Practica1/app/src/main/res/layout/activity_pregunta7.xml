@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.diego.practica1.Pregunta7"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/Usuariop1"
+        android:background="@drawable/usuario"
+        android:baselineAlignBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtnomusuario"
+        android:layout_below="@+id/Usuariop1"
+        android:layout_alignStart="@+id/Usuariop1"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/paso7"
+        android:id="@+id/Paso7"
+        android:layout_above="@+id/Barraprogreso1"
+        android:layout_alignParentStart="false"
+        android:textSize="22dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/Barraprogreso1"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:layout_below="@+id/txtnomusuario"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/pregunta7"
+        android:id="@+id/txtpregunta7"
+        android:layout_below="@+id/Barraprogreso1"
+        android:layout_alignParentStart="true"
+        android:textSize="18dp" />
+
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="@string/siguiente1"
+        android:id="@+id/Siguiente1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/Barraprogreso1"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="@string/anterior"
+        android:id="@+id/Anterior"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Seekbar1"
+        android:max="10"
+        android:indeterminate="false"
+        android:layout_below="@+id/txtpregunta7"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:progress="5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/Cantidad"
+        android:layout_below="@+id/Seekbar1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/Cantidadinicial"
+        android:id="@+id/Cantidadinicial"
+        android:layout_alignBottom="@+id/Cantidad"
+        android:layout_alignStart="@+id/Seekbar1"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/Cantidadfinal"
+        android:id="@+id/Cantidadfinal"
+        android:layout_alignBottom="@+id/Cantidad"
+        android:layout_alignEnd="@+id/txtnomusuario"
+        android:layout_marginRight="20dp" />
+
+</RelativeLayout>

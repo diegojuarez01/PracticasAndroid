@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">Practica1</string>
+    <string name="Bienvenida">Bievenido a la aplicacion para validar tu conocimiento de LOL</string>
+    <string name="Nombre">Introduzca su nombre: </string>
+    <string name="Comenzar">COMENZAR</string>
+    <string name="Menu">Acerca de</string>
+    <string name="Diseñadorapp">Aplicacion desarrollada por DiegoJuarezRomero</string>
+    <string name="Cuestionario"> EMPIEZA EL CUESTIONARIO, !MUCHA SUERTE </string>
+    <string name="paso1"> Paso1 </string>
+    <string name="paso2"> Paso2 </string>
+    <string name="paso3"> Paso3 </string>
+    <string name="paso4"> Paso4 </string>
+    <string name="paso5"> Paso5 </string>
+    <string name="paso6"> Paso6 </string>
+    <string name="paso7"> Paso7 </string>
+    <string name="paso8"> Paso8 </string>
+    <string name="paso9"> Paso9 </string>
+    <string name="paso10"> Paso10 </string>
+    <string name="siguiente1"> SIGUIENTE </string>
+    <string name="anterior"> ANTERIOR </string>
+    <string name="Cantidadinicial">0</string>
+    <string name="Cantidadfinal">10</string>
+    <string name="Final">Su resultado final ha sido el siguiente: </string>
+    <string name="Comenzardenuevo">COMENZAR DE NUEVO</string>
+    <string name="tituloalerta">FIN CUESTIONARIO</string>
+    <string name="preguntaalerta">¿Desea terminar el cuestionario?</string>
+    <string name="sialerta">Si</string>
+    <string name="noalerta">No</string>
+    <!-- String para las preguntas y respuestas del cuestionario -->
+
+    <string name="pregunta1"> ¿Como te llamas? </string>
+    <string name="respuesta1a">Pepe</string>
+    <string name="respuesta1b">Diego</string>
+    <string name="respuesta1c"> Antonio </string>
+    <string name="respuestacorrecta1">Diego</string>
+
+    <string name="pregunta2">¿Que año gano el mundial SKT1?</string>
+    <string name="respuestacorrecta2">2015</string>
+
+    <string name="pregunta3">¿Cual es el rol de xpeke?</string>
+    <string name="respuesta3a">MID</string>
+    <string name="respuesta3b">SUPPORT</string>
+    <string name="respuesta3c">ADC</string>
+    <string name="respuestacorrecta3">MID</string>
+
+    <string name="pregunta4">¿Cual de estos equipos es Español?</string>
+    <string name="respuesta4a">GIANTS</string>
+    <string name="respuesta4b">H2K</string>
+    <string name="respuesta4c">UOL</string>
+    <string name="respuestacorrecta4">GIANTS</string>
+
+    <string name="pregunta5">¿Como se llama la fase donde se prohiben personajes?</string>
+    <string name="respuesta5a">Fase de inicio</string>
+    <string name="respuesta5b">Fase de picks y bans</string>
+    <string name="respuesta5c">Fase definitiva</string>
+    <string name="respuesta5d">Fase de prohibición</string>
+    <string name="respuestacorrecta5">Fase de picks y bans</string>
+
+    <string name="pregunta6">¿En  que minutos no aparece el baron nashor?</string>
+    <string name="respuesta6a">15</string>
+    <string name="respuesta6b">20</string>
+    <string name="respuesta6c">18</string>
+    <string name="respuesta6d">25</string>
+    <string name="respuesta6e">10</string>
+    <string name="respuestacorrecta6">151810</string>
+
+    <string name="pregunta7">¿Cuantos jugadores españoles hay actualmente en la lcs europea?</string>
+    <string name="respuestacorrecta7">3</string>
+
+    <string name="pregunta8">¿Como se le llama a la jugada más famosa del lol? </string>
+    <string name="respuesta8a">Hacer un Gibson</string>
+    <string name="respuesta8b">Hacer un Light</string>
+    <string name="respuesta8c">Hacer un Jack1</string>
+    <string name="respuesta8d">Hacer un Xpeke</string>
+    <string name="respuesta8e">Hacer un Guillazzas</string>
+    <string name="respuesta8f">Hacer un Adryh</string>
+    <string name="respuesta8g">Hacer un BBQ</string>
+    <string name="respuestacorrecta8">Hacer un Xpeke</string>
+
+    <string name="pregunta9">Vara de las edades otorga poder de habilidad ¿verdadero o falso?</string>
+    <string name="respuesta9a">Verdadero</string>
+    <string name="respuesta9b">Falso</string>
+    <string name="respuestacorrecta9">Verdadero</string>
+
+
+    <string name="pregunta10">¿En que año se creo League of Legends?</string>
+    <string name="respuestacorrecta10">2009</string>
+
+
+    <!-- Creamos un String-array donde guardaremos todas las posibles respusetas
+    para los Spinners-->
+
+    <string-array name="respuestas3">
+        <item>@string/respuesta3a</item>
+        <item>@string/respuesta3b</item>
+        <item>@string/respuesta3c</item>
+    </string-array>
+
+    <string-array name="respuestas4">
+        <item>@string/respuesta4a</item>
+        <item>@string/respuesta4b</item>
+        <item>@string/respuesta4c</item>
+    </string-array>
+
+    <string-array name="respuestas5">
+        <item>@string/respuesta5a</item>
+        <item>@string/respuesta5b</item>
+        <item>@string/respuesta5c</item>
+        <item>@string/respuesta5d</item>
+    </string-array>
+
+    <string-array name="respuestas8">
+<item>@string/respuesta8a</item>
+    <item>@string/respuesta8b</item>
+    <item>@string/respuesta8c</item>
+    <item>@string/respuesta8d</item>
+    <item>@string/respuesta8e</item>
+    <item>@string/respuesta8f</item>
+    <item>@string/respuesta8g</item>
+    </string-array>
+
+</resources>
