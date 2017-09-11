@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Dialogos</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    console.log(navigator.notification);
+}
+
+function alertDismissed() {
+    
+}
+function alert(){
+var message = 'Hola Desi';
+var alertCallback = 'Cancelar';
+var title = 'Ejemplo de alert';
+var buttonName = 'Confirmar';
+navigator.notification.alert(message, alertCallback, title, buttonName);
+}
+function onConfirm(buttonIndex) {
+    alert('Has seleccionado el boton: ' + buttonIndex);
+}
+function confirm(){
+var message = 'Hola Desi';
+var confirmCallback = 'onConfirm';
+var title = 'Ejemplo de confirm';
+var buttonLabels = ['Confirmar','Cancelar'];
+navigator.notification.confirm(message, confirmCallback, title, buttonLabels);
+}
+
+function onPrompt(results) {
+    alert("Has seleccionado el boton numero: " + results.buttonIndex + " e introducido: " + results.input1);
+}
+function prompt(){
+var message = 'Hola Desi';
+var promptCallback = 'onPrompt';
+var title = 'Ejemplo de prompt';
+var buttonLabels = ['Confirmar','Salir'];
+var defaultText = '';
+navigator.notification.prompt(message, promptCallback, title, buttonLabels, defaultText);
+}
+	</script>
+		<header>
+			<div id="titulo">
+				<h1>DIÁLOGOS</h1>
+			</div>
+		</header>
+		<nav>
+		</nav>				
+    <body>
+	<button onclick="alert();">Alert</button> <br>	
+	<button onclick="confirm();">Confirm</button> <br>
+	<button onclick="prompt();">Prompt</button> <br>
+	</body>
+		<footer>
+		<div id="titulofoot">
+		<h1>DESARROLLADO POR DIEGO JUAREZ ROMERO </h1>
+		</div>
+		</footer>
+</html>

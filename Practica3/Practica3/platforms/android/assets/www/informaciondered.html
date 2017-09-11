@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Red</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+	    document.addEventListener("deviceready",onDeviceReady,false);
+function onDeviceReady(){
+    var networkState = navigator.connection.type;
+    var states = {};
+    states[Connection.UNKNOWN]  = 'Conexion Desconocida';
+    states[Connection.ETHERNET] = 'Conexion Ethernet';
+    states[Connection.WIFI]     = 'Conexion WiFi';
+    states[Connection.CELL_2G]  = 'Conexion 2G';
+    states[Connection.CELL_3G]  = 'Conexion 3G';
+    states[Connection.CELL_4G]  = 'Conexion 4G';
+    states[Connection.CELL]     = 'Conexion generica';
+    states[Connection.NONE]     = 'No hay conexion de red';
+    alert('Conexion de tipo: ' + states[networkState]);
+	radiobuttons(states[networkState]);
+}
+function radiobuttons(red){
+//Desabilitamos los radiobuttons
+document.getElementById("UNKNOWN").disabled = true;
+document.getElementById("ETHERNET").disabled = true;
+document.getElementById("WIFI").disabled = true;
+document.getElementById("2G").disabled = true;
+document.getElementById("3G").disabled = true;
+document.getElementById("4G").disabled = true;
+document.getElementById("CELL").disabled = true;
+document.getElementById("NONE").disabled = true;
+//Dependiendo de la conexion de red recibido marcamos un radiobutton
+if (red=='Conexion Desconocida')
+{
+document.getElementById("UNKNOWN").checked = true;
+}
+else if(red=='Conexion Ethernet')
+{
+document.getElementById("ETHERNET").checked = true;
+}
+else if(red=='Conexion WiFi')
+{
+document.getElementById("WIFI").checked = true;
+}
+else if(red=='Conexion 2G')
+{
+document.getElementById("2G").checked = true;
+}
+else if(red=='Conexion 3G')
+{
+document.getElementById("3G").checked = true;
+}
+else if(red=='Conexion 4G')
+{
+document.getElementById("4G").checked = true;
+}
+else if(red=='Conexion generica')
+{
+document.getElementById("CELL").checked = true;
+}
+else if(red=='No hay conexion de red')
+{
+document.getElementById("NONE").checked = true;
+}
+}
+	</script>
+		<header>
+			<div id="titulo">
+				<h1>ESTADO DE LA RED</h1>
+			</div>
+		</header>
+		<nav>
+		</nav>				
+    <body>	 
+<fieldset>
+    <legend>Estado:</legend>
+	<input type="radio" name="redes" id="UNKNOWN" value="UNKNOWN">UNKNOWN
+	<input type="radio" name="redes" id="ETHERNET" value="ETHERNET">ETHERNET
+	<input type="radio" name="redes" id="WIFI" value="WIFI">WIFI
+	<input type="radio" name="redes" id="2G" value="2G">2G
+	<input type="radio" name="redes" id="3G" value="3G">3G
+	<input type="radio" name="redes" id="4G" value="4G">4G
+	<input type="radio" name="redes" id="CELL" value="CELL">CELL
+	<input type="radio" name="redes" id="NONE" value="NONE">NONE
+</fieldset>	
+
+	</body>
+		<footer>
+		<div id="titulofoot">
+		<h1>DESARROLLADO POR DIEGO JUAREZ ROMERO </h1>
+		</div>
+		</footer>
+</html>

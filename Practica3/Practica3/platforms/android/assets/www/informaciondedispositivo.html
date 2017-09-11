@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Info.dispositivo</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+document.addEventListener("deviceready",onDeviceReady,false);
+function onDeviceReady(){
+
+var modelo = device.model;
+document.getElementById("modelo").value = modelo;
+document.getElementById("modelo").disabled = true;
+
+var version = device.cordova;
+document.getElementById("version").value = version;
+document.getElementById("version").disabled = true;
+
+var plataforma = device.platform;
+document.getElementById("plataforma").value = plataforma;
+document.getElementById("plataforma").disabled = true;
+
+var versionplataforma = device.version;
+document.getElementById("versionplataforma").value = versionplataforma;
+document.getElementById("versionplataforma").disabled = true;
+
+var UUID = device.uuid;
+document.getElementById("UUID").value = UUID;
+document.getElementById("UUID").disabled = true;
+
+}
+
+	</script>
+		<header>
+			<div id="titulo">
+				<h1>INFORMACIÓN DEL DISPOSITIVO</h1>
+			</div>
+		</header>
+		<nav>
+		</nav>				
+    <body>	 
+	<label for="modelo">Modelo del telefono:</label>
+	<input type="text" name="modelo" id="modelo"><br>
+	<label for="version">Versión de Apache Cordova:</label>
+	<input type="text" name="version" id="version"><br>
+	<label for="plataforma">Plataforma:</label><br>
+	<input type="text" name="plataforma" id="plataforma"><br>
+	<label for="versionplataforma">Version de plataforma:</label>
+	<input type="text" name="versionplataforma" id="versionplataforma"><br>
+	<label for="UUID">UUID:</label><br>
+	<input type="text" name="UUID" id="UUID">
+	</body>
+		<footer>
+		<div id="titulofoot">
+		<h1>DESARROLLADO POR DIEGO JUAREZ ROMERO </h1>
+		</div>
+		</footer>
+</html>
